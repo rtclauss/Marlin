@@ -406,9 +406,16 @@
 
 // rtclauss e3d measurement on 12/18/2017
 // M303 E0 S230 C10
-#define  DEFAULT_Kp 13.37
-#define  DEFAULT_Ki 0.54
-#define  DEFAULT_Kd 83.22
+//#define  DEFAULT_Kp 13.37
+//#define  DEFAULT_Ki 0.54
+//#define  DEFAULT_Kd 83.22
+
+// rtclauss e3d measurement on 12/18/2017
+// M106 S127
+// M303 E0 S230 C10
+#define  DEFAULT_Kp 30.79
+#define  DEFAULT_Ki 1.58
+#define  DEFAULT_Kd 150.71
 
 #endif // PIDTEMP
 
@@ -793,7 +800,7 @@
  *    (0,0)
  */
 #define X_PROBE_OFFSET_FROM_EXTRUDER 26   // X offset: -left  +right  [of the nozzle]
-#define Y_PROBE_OFFSET_FROM_EXTRUDER 40   // Y offset: -front +behind [the nozzle]
+#define Y_PROBE_OFFSET_FROM_EXTRUDER 50   // Y offset: -front +behind [the nozzle]
 #define Z_PROBE_OFFSET_FROM_EXTRUDER 0   // Z offset: -below +above  [the nozzle]
 
 // Certain types of probes need to stay away from edges
