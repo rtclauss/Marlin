@@ -309,12 +309,9 @@
 #define TEMP_SENSOR_2 0
 #define TEMP_SENSOR_3 0
 #define TEMP_SENSOR_4 0
-<<<<<<< HEAD
-#define TEMP_SENSOR_BED 0
-#define TEMP_SENSOR_CHAMBER 0
-=======
 #define TEMP_SENSOR_BED 5
->>>>>>> customizations for anet a8
+#define TEMP_SENSOR_CHAMBER 0
+
 
 // Dummy thermistor constant temperature readings, for use with 998 and 999
 #define DUMMY_THERMISTOR_998_VALUE 25
@@ -378,15 +375,9 @@
   // If you are using a pre-configured hotend then you can use one of the value sets by uncommenting it
 
   // Ultimaker
-<<<<<<< HEAD
-  #define DEFAULT_Kp 22.2
-  #define DEFAULT_Ki 1.08
-  #define DEFAULT_Kd 114
-=======
   //#define  DEFAULT_Kp 21.0
   //#define  DEFAULT_Ki 1.25
   //#define  DEFAULT_Kd 86.0
->>>>>>> customizations for anet a8
 
   // MakerGear
   //#define DEFAULT_Kp 7.0
@@ -1030,11 +1021,7 @@
   /**
    * Enable the G26 Mesh Validation Pattern tool.
    */
-<<<<<<< HEAD
-  //#define G26_MESH_VALIDATION
-=======
   //#define G26_MESH_VALIDATION   // Enable G26 mesh validation
->>>>>>> customizations for anet a8
   #if ENABLED(G26_MESH_VALIDATION)
     #define MESH_TEST_NOZZLE_SIZE    0.4  // (mm) Diameter of primary nozzle.
     #define MESH_TEST_LAYER_HEIGHT   0.2  // (mm) Default layer height for the G26 Mesh Validation Tool.
@@ -1051,12 +1038,11 @@
   #define GRID_MAX_POINTS_Y GRID_MAX_POINTS_X
 
   // Set the boundaries for probing (where the probe can reach).
-<<<<<<< HEAD
   //#define LEFT_PROBE_BED_POSITION MIN_PROBE_EDGE
   //#define RIGHT_PROBE_BED_POSITION (X_BED_SIZE - MIN_PROBE_EDGE)
   //#define FRONT_PROBE_BED_POSITION MIN_PROBE_EDGE
   //#define BACK_PROBE_BED_POSITION (Y_BED_SIZE - MIN_PROBE_EDGE)
-=======
+
   #define LEFT_PROBE_BED_POSITION 15
   #define RIGHT_PROBE_BED_POSITION 190
   // #define FRONT_PROBE_BED_POSITION 15
@@ -1066,7 +1052,6 @@
 
   // The Z probe minimum outer margin (to validate G29 parameters).
   #define MIN_PROBE_EDGE 10
->>>>>>> customizations for anet a8
 
   // Probe along the Y axis, advancing X after each column
   //#define PROBE_Y_FIRST
@@ -1089,20 +1074,6 @@
 
   #endif
 
-<<<<<<< HEAD
-=======
-#elif ENABLED(AUTO_BED_LEVELING_3POINT)
-
-  // 3 arbitrary points to probe.
-  // A simple cross-product is used to estimate the plane of the bed.
-  #define ABL_PROBE_PT_1_X 20
-  #define ABL_PROBE_PT_1_Y 160
-  #define ABL_PROBE_PT_2_X 20
-  #define ABL_PROBE_PT_2_Y 10
-  #define ABL_PROBE_PT_3_X 180
-  #define ABL_PROBE_PT_3_Y 10
-
->>>>>>> customizations for anet a8
 #elif ENABLED(AUTO_BED_LEVELING_UBL)
 
   //===========================================================================
@@ -1570,14 +1541,11 @@
 //
 //#define LCD_FEEDBACK_FREQUENCY_DURATION_MS 2
 //#define LCD_FEEDBACK_FREQUENCY_HZ 5000
-<<<<<<< HEAD
 
 //=============================================================================
 //======================== LCD / Controller Selection =========================
 //========================   (Character-based LCDs)   =========================
 //=============================================================================
-=======
->>>>>>> customizations for anet a8
 
 //
 // RepRapDiscount Smart Controller.
@@ -1612,8 +1580,7 @@
 //#define G3D_PANEL
 
 //
-<<<<<<< HEAD
-=======
+
 // RepRapDiscount FULL GRAPHIC Smart Controller
 // http://reprap.org/wiki/RepRapDiscount_Full_Graphic_Smart_Controller
 //
@@ -1638,7 +1605,6 @@
 //#define REPRAPWORLD_KEYPAD_MOVE_STEP 1.0
 
 //
->>>>>>> customizations for anet a8
 // RigidBot Panel V1.0
 // http://www.inventapart.com/
 //
@@ -1831,7 +1797,6 @@
 //#define CR10_STOCKDISPLAY
 
 //
-<<<<<<< HEAD
 // ANET and Tronxy Graphical Controller
 //
 //#define ANET_FULL_GRAPHICS_LCD  // Anet 128x64 full graphics lcd with rotary encoder as used on Anet A6
@@ -1839,8 +1804,6 @@
                                   // different pins/wiring (see pins_ANET_10.h).
 
 //
-=======
->>>>>>> customizations for anet a8
 // MKS OLED 1.3" 128 × 64 FULL GRAPHICS CONTROLLER
 // http://reprap.org/wiki/MKS_12864OLED
 //
